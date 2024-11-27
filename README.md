@@ -4,7 +4,7 @@ ip terraform doc
 # Important
 1. Generate documentation
 ```
-terraform-docs -c .terraform-docs.yml --output-file README.md --output-mode replace .
+terraform-docs -c .terraform-docs.yml --output-file README.md --output-mode inject .
 ```
 
 2. Generate terraform.tfvars
@@ -13,6 +13,7 @@ terraform-docs tfvars hcl /path/to/module
 
 terraform-docs tfvars json /path/to/module
 ``` 
+
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
@@ -49,7 +50,4 @@ No modules.
 | <a name="input_private_subnet_cidrs"></a> [private\_subnet\_cidrs](#input\_private\_subnet\_cidrs) | Private Subnet CIDR values | `list(string)` | <pre>[<br/>  "10.0.4.0/24",<br/>  "10.0.5.0/24",<br/>  "10.0.6.0/24"<br/>]</pre> | no |
 | <a name="input_public_subnet_cidrs"></a> [public\_subnet\_cidrs](#input\_public\_subnet\_cidrs) | Public Subnet CIDR values | `list(string)` | <pre>[<br/>  "10.0.1.0/24",<br/>  "10.0.2.0/24",<br/>  "10.0.3.0/24"<br/>]</pre> | no |
 
-## Outputs
-
-No outputs.
 <!-- END_TF_DOCS -->
