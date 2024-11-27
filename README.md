@@ -13,7 +13,6 @@ terraform-docs tfvars hcl /path/to/module
 
 terraform-docs tfvars json /path/to/module
 ``` 
-# Testing Github action tfdoc generation
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
